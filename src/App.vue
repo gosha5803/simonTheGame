@@ -1,12 +1,23 @@
 <template>
   <div id="app">
-    <nav>
+    <!-- <nav>
       <router-link to="/">Home</router-link> |
       <router-link to="/game">Game</router-link>
-    </nav>
-    <router-view/>
+    </nav> -->
+    <!-- <router-view/> -->
+    <GamePage/>
   </div>
 </template>
+
+<script>
+import GamePage from './pages/GamePage.vue';
+
+  export default {
+    components: {
+    GamePage
+}
+  }
+</script>
 
 <style lang="scss">
 #app {
